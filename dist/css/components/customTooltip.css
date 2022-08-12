@@ -1,0 +1,102 @@
+.custom-tooltip {
+  display: inline-block;
+  position: relative; }
+
+.tooltip-with-icon .tooltip-button {
+  align-items: center;
+  background-color: #e9ecef;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 5px;
+  transition: color 0.3s cubic-bezier(0.3, 0, 0, 1); }
+
+.tooltip-button {
+  border: none;
+  letter-spacing: 0; }
+
+.tooltip-panel {
+  background-color: #e9ecef;
+  border: solid 0 rgba(255, 255, 255, 0);
+  border-radius: 0;
+  color: #000;
+  max-width: calc(100vw - 40px);
+  position: absolute;
+  text-align: initial;
+  width: 290px;
+  z-index: 2; }
+
+.tooltip-panel-large {
+  width: 500px; }
+
+.custom-tooltip-inner {
+  display: inline-block;
+  padding: 20px;
+  width: 100%; }
+
+.custom-tooltip-inner > *:last-child {
+  margin-bottom: 0; }
+
+.custom-tooltip-inner > *:first-child {
+  margin-top: 0; }
+
+.custom-tooltip-inner p {
+  line-height: 20px;
+  margin-bottom: 0; }
+
+.tooltip-arrow-right {
+  left: -10px;
+  transform: rotate(-45deg) skew(15deg, 15deg); }
+
+.tooltip-arrow {
+  background: #e9ecef;
+  border: solid 0 rgba(255, 255, 255, 0);
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  z-index: 3; }
+
+#tooltip {
+  background-color: #e9ecef;
+  border: solid 0 rgba(255, 255, 255, 0);
+  border-radius: 0;
+  color: #000;
+  max-width: calc(100vw - 40px);
+  position: absolute;
+  text-align: initial;
+  width: 290px;
+  z-index: 2;
+  width: 500px;
+  display: none; }
+
+#tooltip[data-show] {
+  display: block; }
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit; }
+
+#arrow {
+  visibility: hidden; }
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg); }
+
+#tooltip[data-popper-placement^="top"] > #arrow {
+  bottom: -4px; }
+
+#tooltip[data-popper-placement^="bottom"] > #arrow {
+  top: -4px; }
+
+#tooltip[data-popper-placement^="left"] > #arrow {
+  right: -4px; }
+
+#tooltip[data-popper-placement^="right"] > #arrow {
+  left: -4px; }

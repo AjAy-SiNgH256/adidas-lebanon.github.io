@@ -1,0 +1,79 @@
+.custom-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #767677;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
+  padding: 15px calc(15px);
+  text-transform: none;
+  width: 100%; }
+  @media screen and (max-width: 960px) {
+    .custom-input {
+      padding: 15px 15px; } }
+  .custom-input:focus {
+    border-color: #000;
+    box-shadow: none; }
+
+.float-backround {
+  background-color: #fff; }
+
+input[type="text"]:focus ~ .floating-label,
+input[type="tel"]:focus ~ .floating-label,
+input[type="password"]:focus ~ .floating-label,
+input[type="email"]:focus ~ .floating-label,
+input[type="text"]:not(:placeholder-shown) ~ .floating-label,
+input[type="tel"]:not(:placeholder-shown) ~ .floating-label,
+input[type="email"]:not(:placeholder-shown) ~ .floating-label,
+input[type="password"]:not(:placeholder-shown) ~ .floating-label {
+  top: -11px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 14px;
+  opacity: 1; }
+
+input[type="text"],
+input[type="tel"] {
+  height: 55px; }
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 14px;
+  transition: 0.2s ease all;
+  padding-left: 8px;
+  color: #767677; }
+
+.gc-input-field-error {
+  border-bottom: 1px solid #e32b2b !important;
+  box-shadow: 0 1px 0 0 #e32b2b !important; }
+
+.gc-input-field-success {
+  border-bottom: 1px solid #00aa55 !important;
+  box-shadow: 0 1px 0 0 #00aa55 !important; }
+
+.error-feedback {
+  display: block; }
+
+.invalid-input, .success-input {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  display: none; }
+
+.pattern-field-error {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545; }

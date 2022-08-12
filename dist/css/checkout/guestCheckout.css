@@ -1,0 +1,484 @@
+.gl-body--s,
+.gl-paragraph--s {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 14px;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+.adidas-logo {
+  margin-right: 20px;
+  min-width: 70px;
+  height: 42px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  transform-origin: 0 25px;
+  transition: width 0.45s, transform 0.45s cubic-bezier(0, 0.7, 0.6, 1); }
+
+@media screen and (max-width: 992px) {
+  .mobile-icon {
+    justify-content: center;
+    display: flex; } }
+
+.form-item {
+  position: relative; }
+
+.checkbox {
+  text-align: left; }
+
+.checkbox-label {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  line-height: 24px;
+  margin-bottom: 0;
+  position: relative; }
+
+.checkbox-input {
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 24px;
+  margin: 0 10px 0 0;
+  opacity: 0;
+  pointer-events: all;
+  width: 24px; }
+
+.checkbox-icon {
+  align-items: center;
+  background: #fff;
+  border-color: #767677;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: transparent !important;
+  display: flex;
+  height: 24px !important;
+  justify-content: center;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: border-color 0.3s cubic-bezier(0.3, 0, 0, 1);
+  width: 24px !important; }
+
+.checkbox-checked .checkbox-icon {
+  background: #000;
+  border-color: #000;
+  color: #fff !important; }
+
+.checkbox:hover .checkbox-icon {
+  border-color: #000; }
+
+.checkbox-text {
+  display: inline-block;
+  font-size: 16px;
+  transition: color 0.3s cubic-bezier(0.3, 0, 0, 1), background-color 0.3s cubic-bezier(0.3, 0, 0, 1); }
+
+.custom-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #767677;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
+  padding: 15px calc(15px);
+  text-transform: none;
+  width: 100%; }
+  @media screen and (max-width: 960px) {
+    .custom-input {
+      padding: 15px 15px; } }
+  .custom-input:focus {
+    border-color: #000;
+    box-shadow: none; }
+
+.float-backround {
+  background-color: #fff; }
+
+input[type="text"]:focus ~ .floating-label,
+input[type="tel"]:focus ~ .floating-label,
+input[type="password"]:focus ~ .floating-label,
+input[type="email"]:focus ~ .floating-label,
+input[type="text"]:not(:placeholder-shown) ~ .floating-label,
+input[type="tel"]:not(:placeholder-shown) ~ .floating-label,
+input[type="email"]:not(:placeholder-shown) ~ .floating-label,
+input[type="password"]:not(:placeholder-shown) ~ .floating-label {
+  top: -11px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 14px;
+  opacity: 1; }
+
+input[type="text"],
+input[type="tel"] {
+  height: 55px; }
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 14px;
+  transition: 0.2s ease all;
+  padding-left: 8px;
+  color: #767677; }
+
+.gc-input-field-error {
+  border-bottom: 1px solid #e32b2b !important;
+  box-shadow: 0 1px 0 0 #e32b2b !important; }
+
+.gc-input-field-success {
+  border-bottom: 1px solid #00aa55 !important;
+  box-shadow: 0 1px 0 0 #00aa55 !important; }
+
+.error-feedback {
+  display: block; }
+
+.invalid-input, .success-input {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  display: none; }
+
+.pattern-field-error {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545; }
+
+.custom-select {
+  align-items: center;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #767677;
+  border-radius: 0;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 15px 0px;
+  position: relative;
+  text-transform: uppercase;
+  transition: border-color 0.3s cubic-bezier(0.3, 0, 0, 1);
+  width: 100%;
+  height: 55px; }
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element: */ }
+
+.select-items div {
+  color: #000;
+  padding: 16px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  height: 55px;
+  border-bottom: 1px solid #767677; }
+  .select-items div:hover {
+    background-color: #e9ecef; }
+
+/* Point the arrow upwards when the select box is open (active): */
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 99%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid #767677;
+  border-bottom: none;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-weight: 100;
+  overflow: auto;
+  max-height: 190px; }
+
+.select-hide {
+  display: none; }
+
+.select-selected {
+  align-items: center;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #767677;
+  border-radius: 0;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 16px 16px;
+  position: relative;
+  transition: border-color 0.3s cubic-bezier(0.3, 0, 0, 1);
+  width: 100%;
+  height: 55px; }
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  background: url(https://img.icons8.com/ios-glyphs/24/000000/expand-arrow--v1.png>) no-repeat;
+  top: 14px;
+  width: 24px;
+  height: 24px;
+  right: 10px; }
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  transform: scaleY(-1); }
+
+.same-as-selected {
+  font-weight: 700;
+  background-color: #e9ecef; }
+
+.custom-tooltip {
+  display: inline-block;
+  position: relative; }
+
+.tooltip-with-icon .tooltip-button {
+  align-items: center;
+  background-color: #e9ecef;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 5px;
+  transition: color 0.3s cubic-bezier(0.3, 0, 0, 1); }
+
+.tooltip-button {
+  border: none;
+  letter-spacing: 0; }
+
+.tooltip-panel {
+  background-color: #e9ecef;
+  border: solid 0 rgba(255, 255, 255, 0);
+  border-radius: 0;
+  color: #000;
+  max-width: calc(100vw - 40px);
+  position: absolute;
+  text-align: initial;
+  width: 290px;
+  z-index: 2; }
+
+.tooltip-panel-large {
+  width: 500px; }
+
+.custom-tooltip-inner {
+  display: inline-block;
+  padding: 20px;
+  width: 100%; }
+
+.custom-tooltip-inner > *:last-child {
+  margin-bottom: 0; }
+
+.custom-tooltip-inner > *:first-child {
+  margin-top: 0; }
+
+.custom-tooltip-inner p {
+  line-height: 20px;
+  margin-bottom: 0; }
+
+.tooltip-arrow-right {
+  left: -10px;
+  transform: rotate(-45deg) skew(15deg, 15deg); }
+
+.tooltip-arrow {
+  background: #e9ecef;
+  border: solid 0 rgba(255, 255, 255, 0);
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  width: 20px;
+  z-index: 3; }
+
+#tooltip {
+  background-color: #e9ecef;
+  border: solid 0 rgba(255, 255, 255, 0);
+  border-radius: 0;
+  color: #000;
+  max-width: calc(100vw - 40px);
+  position: absolute;
+  text-align: initial;
+  width: 290px;
+  z-index: 2;
+  width: 500px;
+  display: none; }
+
+#tooltip[data-show] {
+  display: block; }
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit; }
+
+#arrow {
+  visibility: hidden; }
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg); }
+
+#tooltip[data-popper-placement^="top"] > #arrow {
+  bottom: -4px; }
+
+#tooltip[data-popper-placement^="bottom"] > #arrow {
+  top: -4px; }
+
+#tooltip[data-popper-placement^="left"] > #arrow {
+  right: -4px; }
+
+#tooltip[data-popper-placement^="right"] > #arrow {
+  left: -4px; }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px; } }
+
+.step-previous {
+  align-items: center;
+  color: #000;
+  text-decoration: none; }
+  .step-previous:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #000; }
+
+.step-selected {
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000; }
+  .step-selected:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #000; }
+
+.step-next {
+  align-items: center;
+  color: #000;
+  text-decoration: none; }
+  .step-next:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #000; }
+
+.step-previous .step-number {
+  background-color: #000; }
+
+.step-selected .step-number {
+  background-color: #000; }
+
+.step-padding {
+  padding-right: 10px; }
+
+.step-number {
+  background-color: #767677;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 50%; }
+
+.step-label {
+  margin-left: 7px;
+  text-decoration: none; }
+
+.step-label-next {
+  margin-left: 7px;
+  text-decoration: none; }
+  @media screen and (max-width: 600px) {
+    .step-label-next {
+      display: none; } }
+
+.search-icon {
+  float: right;
+  right: 6px;
+  bottom: 40px;
+  position: relative;
+  width: 25px; }
+
+.common-heading {
+  font-weight: 700;
+  font-size: 30px; }
+  @media screen and (max-width: 960px) {
+    .common-heading {
+      font-size: 26px; } }
+
+.delivery-option-selectable:hover {
+  cursor: pointer;
+  border-color: #000; }
+
+.delivery-options {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #e9ecef; }
+
+.delivery-option-selected {
+  border-color: #000; }
+
+.delivery-option-checked {
+  width: 24px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 16px;
+  background-color: #000;
+  color: #fff;
+  padding: 4px; }
+
+.custom-padding {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+@media screen and (min-width: 960px) {
+  .checkout-custom-width {
+    width: 50%; } }
+
+.billing-toggle {
+  display: none; }
+
+.gc-cta-primary {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  height: 50px;
+  transform: translate(-3px, -3px); }
+
+.gc-vspace-medium {
+  margin-top: 40px; }

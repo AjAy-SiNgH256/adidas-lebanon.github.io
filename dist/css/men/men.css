@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif; }
+
+.page-width-alter {
+  max-width: 1360px;
+  margin: 0 auto; }
+
+.gl-body-1 {
+  font-size: 18px;
+  line-height: 24px; }
+
+.mens-container {
+  max-width: 1260px;
+  width: 95%;
+  margin: 0 auto; }
+
+.price-actual-value {
+  color: #000 !important; }
+
+.slick-dots li button {
+  transition: .2s; }
+  .slick-dots li button:hover {
+    height: 4px !important; }
+
+.slick-disabled {
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s; }
+
+ul.slick-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 24px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  ul.slick-dots li {
+    margin: 0 6px; }
+  ul.slick-dots li.slick-active button {
+    height: 4px !important; }
+  ul.slick-dots button {
+    background: #000;
+    border: none;
+    width: 18px;
+    height: 2px;
+    outline: none;
+    font-size: 0; }
+
+.page-width {
+  max-width: 1260px;
+  width: 95%;
+  margin: 0 auto; }
+
+.heading,
+.heading-2 {
+  font-family: "adineuePRO-BoldWeb";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 38px; }
+
+.womens-video-banner-main-bg {
+  width: 100%;
+  position: relative; }
+  .womens-video-banner-main-bg video {
+    width: 100%;
+    display: block; }
+  .womens-video-banner-main-bg .womens-video-banner-block-items {
+    max-width: 500px;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3.5%; }
+
+.women-banner-main-block .custom-text2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2.7%;
+  color: #fff;
+  width: 30%; }
+  .women-banner-main-block .custom-text2 .fa-long-arrow-right {
+    color: #000; }
+  .women-banner-main-block .custom-text2 .cta-primary-alter {
+    background: #fff; }
+  .women-banner-main-block .custom-text2 .cta-content {
+    color: #000; }
+  .women-banner-main-block .custom-text2 .cta-primary::before {
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff; }
+  .women-banner-main-block .custom-text2 .cta-primary::after {
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff; }
+
+.men-outer-main-block {
+  padding-bottom: 18px; }
+  .men-outer-main-block .mens-title-bar .heading-2 {
+    font-size: 30px;
+    line-height: 28px;
+    margin: 20px 0;
+    text-align: center; }
+  .men-outer-main-block .mens-subnav {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #e9ecef;
+    box-shadow: 1px 8px 20px #0000000d; }
+    .men-outer-main-block .mens-subnav ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      overflow: scroll;
+      white-space: nowrap; }
+      .men-outer-main-block .mens-subnav ul::-webkit-scrollbar {
+        display: none; }
+      .men-outer-main-block .mens-subnav ul li a {
+        color: #000;
+        text-transform: uppercase;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: 2px; }
+        .men-outer-main-block .mens-subnav ul li a:hover {
+          background: transparent;
+          opacity: .6; }
+
+.top-picks-main-bg {
+  margin-top: 80px; }
+  .top-picks-main-bg .heading-2 {
+    font-size: 30px;
+    line-height: 28px; }
+  .top-picks-main-bg .top-picks-header {
+    padding: 0 5px; }
+  .top-picks-main-bg .product-block-alter {
+    padding: 10px 5px; }
+    .top-picks-main-bg .product-block-alter .product-info {
+      border: 1px solid transparent; }
+    .top-picks-main-bg .product-block-alter:hover .product-info {
+      border: 1px solid #000; }
+    .top-picks-main-bg .product-block-alter .product-card__assets {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #eceef0; }
+      .top-picks-main-bg .product-block-alter .product-card__assets .product-heart-icon {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+      .top-picks-main-bg .product-block-alter .product-card__assets .complete-look-zoom-icon {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+      .top-picks-main-bg .product-block-alter .product-card__assets .discount-price {
+        position: absolute;
+        bottom: 31px;
+        background-color: #fff;
+        font-weight: 700;
+        left: 6px;
+        font-size: 14px;
+        padding: 2px 5px;
+        transition: .2s; }
+      .top-picks-main-bg .product-block-alter .product-card__assets .price {
+        color: #e32b2b;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 6px;
+        font-size: 14px;
+        padding: 2px 5px;
+        transition: .2s; }
+        .top-picks-main-bg .product-block-alter .product-card__assets .price strike {
+          color: #767677;
+          margin-right: 5px; }
+    .top-picks-main-bg .product-block-alter .product-card__details {
+      padding: 10px 10px 20px;
+      min-height: 120px; }
+      .top-picks-main-bg .product-block-alter .product-card__details p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0; }
+      .top-picks-main-bg .product-block-alter .product-card__details h5 {
+        font-size: 12px;
+        line-height: 20px; }
+    .top-picks-main-bg .product-block-alter .product-info:hover .price {
+      bottom: 6px; }
+    .top-picks-main-bg .product-block-alter .product-info:hover .discount-price {
+      bottom: 36px; }
+  .top-picks-main-bg button.you-may-like-button {
+    background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    padding: 12px 16px; }
+  .top-picks-main-bg .you-may-like-left-button {
+    left: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+  .top-picks-main-bg .you-may-like-right-button {
+    right: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+
+.mens-video-main-block {
+  margin-top: 80px; }
+  .mens-video-main-block .product-block-alter {
+    padding: 10px 5px; }
+    .mens-video-main-block .product-block-alter .product-card__assets a video {
+      display: block;
+      max-height: 360px;
+      min-height: 360px;
+      object-fit: cover;
+      width: 100%; }
+    .mens-video-main-block .product-block-alter .product-card__assets a img {
+      width: 100%;
+      display: block;
+      object-fit: cover; }
+    .mens-video-main-block .product-block-alter .product-card__details {
+      padding: 10px 0; }
+      .mens-video-main-block .product-block-alter .product-card__details a {
+        margin-top: 35px; }
+  .mens-video-main-block button.home-slick-arrow {
+    background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    padding: 12px 16px; }
+  .mens-video-main-block .product-slick-left {
+    left: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+  .mens-video-main-block .product-slick-right {
+    right: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+
+.mens-post-script-main-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px; }
+  .mens-post-script-main-bg .heading-2 {
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: 1.5px; }
+  .mens-post-script-main-bg .mens-post-script-main-block {
+    max-width: 830px;
+    text-align: center; }
+    .mens-post-script-main-bg .mens-post-script-main-block p {
+      font-size: 18px;
+      line-height: 24px;
+      font-style: normal;
+      font-weight: normal;
+      padding: 8px 0; }
+
+.mens-varities-main-bg {
+  margin-top: 50px; }
+  .mens-varities-main-bg .mens-varities-inner-main-block {
+    margin: 0 !important; }
+  .mens-varities-main-bg .mens-varities-block-items {
+    text-align: center;
+    width: 25%; }
+    .mens-varities-main-bg .mens-varities-block-items .gl-heading--s {
+      font-family: "adineuePRO-BoldWeb";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 18px; }
+    .mens-varities-main-bg .mens-varities-block-items .mens-varities-block-items-inner-content ul {
+      list-style-type: none; }
+      .mens-varities-main-bg .mens-varities-block-items .mens-varities-block-items-inner-content ul li {
+        margin: 12px 0; }
+        .mens-varities-main-bg .mens-varities-block-items .mens-varities-block-items-inner-content ul li a {
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none; }
+          .mens-varities-main-bg .mens-varities-block-items .mens-varities-block-items-inner-content ul li a:hover {
+            background: transparent;
+            color: #000; }
+        .mens-varities-main-bg .mens-varities-block-items .mens-varities-block-items-inner-content ul li span a {
+          font-weight: 600;
+          text-transform: uppercase;
+          text-decoration: underline; }
+          .mens-varities-main-bg .mens-varities-block-items .mens-varities-block-items-inner-content ul li span a:hover {
+            background: #000;
+            color: #fff; }
+
+.mens-teaser-main-block {
+  margin-top: 36px;
+  padding-bottom: 50px; }
+  .mens-teaser-main-block .product-block-alter {
+    padding: 10px 5px; }
+    .mens-teaser-main-block .product-block-alter .product-card__assets a img {
+      width: 100%;
+      display: block; }
+    .mens-teaser-main-block .product-block-alter .product-card__details {
+      padding: 10px 0; }
+      .mens-teaser-main-block .product-block-alter .product-card__details a {
+        margin-top: 15px;
+        color: #000; }
+        .mens-teaser-main-block .product-block-alter .product-card__details a .fa-long-arrow-right {
+          color: #000; }
+      .mens-teaser-main-block .product-block-alter .product-card__details .cta-primary-alter_1 {
+        background: #fff;
+        border: 1px solid #000; }
+      .mens-teaser-main-block .product-block-alter .product-card__details .cta-primary-alter_1::before {
+        content: none; }
+      .mens-teaser-main-block .product-block-alter .product-card__details .cta-primary-alter_1::after {
+        content: none; }
+  .mens-teaser-main-block button.home-slick-arrow {
+    background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    padding: 12px 16px; }
+  .mens-teaser-main-block .product-slick-left {
+    left: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+  .mens-teaser-main-block .product-slick-right {
+    right: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+
+.only-at-adidas-main-bg {
+  margin-top: 80px;
+  padding-bottom: 40px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .only-at-adidas-header {
+    padding: 0 5px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .only-at-adidas-subHeading-main {
+    padding: 0 5px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .only-at-adidas-btn {
+    padding: 0 5px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .header-view-more a {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .only-at-adidas-subHeading {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .heading-2 {
+    font-size: 30px;
+    line-height: 28px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter {
+    padding: 12px 5px; }
+    .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-info {
+      border: 1px solid transparent; }
+    .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter:hover .product-info {
+      border: 1px solid #000; }
+    .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__assets {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #eceef0; }
+      .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__assets .product-heart-icon {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+      .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__assets .complete-look-zoom-icon {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+      .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__assets .discount-price {
+        position: absolute;
+        bottom: 31px;
+        background-color: #fff;
+        font-weight: 700;
+        left: 6px;
+        font-size: 14px;
+        padding: 2px 5px;
+        transition: .2s; }
+      .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__assets .price {
+        color: #e32b2b;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 6px;
+        font-size: 14px;
+        padding: 2px 5px;
+        transition: .2s; }
+        .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__assets .price strike {
+          color: #767677;
+          margin-right: 5px; }
+    .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__details {
+      padding: 10px 10px 20px;
+      min-height: 120px; }
+      .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__details p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0; }
+      .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__details h5 {
+        font-size: 12px;
+        line-height: 20px; }
+    .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-info:hover .price {
+      bottom: 6px; }
+    .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-info:hover .discount-price {
+      bottom: 36px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block button.you-may-like-button {
+    background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    padding: 12px 16px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .you-may-like-left-button {
+    left: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .you-may-like-right-button {
+    right: 15px;
+    top: 40%;
+    transform: translateY(-40%); }
+
+@media only screen and (max-width: 1101px) {
+  .mens-container {
+    width: 100%; } }
+
+@media only screen and (max-width: 960px) {
+  .men-outer-main-block .mens-subnav ul li a {
+    height: 65px; }
+  .men-outer-main-block .mens-subnav ul {
+    justify-content: flex-start; }
+  .responsive-slider-button,
+  .home-slick-arrow {
+    display: none !important; }
+  .womens-video-banner-main-bg .womens-video-banner-block-items {
+    bottom: 40px;
+    left: 4%;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .women-banner-main-block .custom-text2 {
+    bottom: 40px;
+    left: 2%;
+    transform: none;
+    width: 50%; }
+  .womens-video-banner-main-bg video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    min-height: 100vh; }
+  .womens-video-banner-main-block {
+    min-height: 100vh; }
+  .womens-video-banner-main-bg {
+    min-height: 100vh; }
+  .mens-varities-main-bg .mens-varities-block-items {
+    width: 100%; }
+  .mens-varities-block-items-inner-content {
+    display: none; }
+  .heading-2,
+  .heading {
+    font-size: 36px;
+    line-height: 32px; }
+  .womens-video-banner-block-items {
+    max-width: 50% !important; }
+  .snug-appeal-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .men-outer-main-block .mens-subnav {
+    margin-left: 18px; }
+  .product-block-alter .product-card__details p {
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-bottom: 0; }
+  .product-block-alter .product-card__details {
+    padding: 6px 6px 14px !important; }
+  .price,
+  .discount-price {
+    font-size: 12px !important;
+    line-height: 16px !important; }
+  .top-picks-main-bg {
+    margin-top: 16px; }
+  .mens-video-main-block .product-block-alter .product-card__details a {
+    margin-top: 0; }
+  .mens-varities-block-items-content {
+    padding: 10px 0 20px; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__details {
+    min-height: 90px; }
+  .mens-teaser-main-block {
+    padding-bottom: 0; }
+  .mens-post-script-main-bg {
+    margin-top: 30px; }
+  .mens-varities-main-bg {
+    margin-top: 10px; }
+  .only-at-adidas-main-bg {
+    margin-top: 40px; }
+  .top-picks-main-bg .product-block-alter .product-card__details {
+    min-height: 90px; } }
+
+@media only screen and (max-width: 600px) {
+  .womens-video-banner-block-items {
+    max-width: 90% !important; }
+  .custom-text2 {
+    width: 90% !important; }
+  .women-banner-main-block {
+    min-height: 100vh; }
+  .women-banner-main-block img {
+    min-height: 100vh;
+    object-fit: cover; }
+  .only-at-adidas-main-bg .only-at-adidas-main-block .product-block-alter .product-card__details {
+    min-height: 100px; }
+  .top-picks-main-bg .product-block-alter .product-card__details {
+    min-height: 90px; } }
+
+@media only screen and (max-width: 425px) {
+  .womens-video-banner-main-bg video {
+    min-height: 88vh; }
+  .womens-video-banner-main-bg {
+    min-height: 88vh; }
+  .womens-video-banner-main-block {
+    min-height: 88vh; }
+  .women-banner-main-block img {
+    min-height: 90vh; }
+  .women-banner-main-block {
+    min-height: 90vh; } }
+
+@media only screen and (max-width: 376px) {
+  .womens-video-banner-main-bg video {
+    min-height: 80vh; }
+  .womens-video-banner-main-bg {
+    min-height: 80vh; }
+  .womens-video-banner-main-block {
+    min-height: 80vh; }
+  .women-banner-main-block img {
+    min-height: 76vh; }
+  .women-banner-main-block {
+    min-height: 76vh; }
+  .top-picks-main-bg .product-block-alter .product-card__details {
+    min-height: 78px; } }

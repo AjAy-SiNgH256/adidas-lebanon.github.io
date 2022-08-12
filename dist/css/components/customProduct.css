@@ -1,0 +1,95 @@
+.product-block-alter .product-info {
+  border: 1px solid transparent; }
+
+.product-block-alter:hover {
+  border: 1px solid #000; }
+
+.product-info {
+  background-color: #e9ecef; }
+  .product-info:hover .price {
+    bottom: 5px; }
+
+.product-card-assets {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .product-card-assets .product-heart-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer; }
+  .product-card-assets .price {
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 4px;
+    font-size: 14px;
+    padding: 2px 5px;
+    transition: 0.2s; }
+    .product-card-assets .price strike {
+      color: #767677;
+      margin-right: 5px; }
+
+.product-card-bg {
+  background-color: #fff; }
+
+.product-card-category {
+  color: #767677;
+  flex: 1 1 auto;
+  font-family: "AdihausDIN-Regular", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.slick-arrow {
+  background: #fff;
+  border: 1px solid #000;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 9;
+  padding: 12px 16px; }
+
+.product-slick-left {
+  left: 15px;
+  top: 40%;
+  transform: translateY(-100%); }
+
+.product-slick-right {
+  right: 15px;
+  top: 40%;
+  transform: translateY(-100%); }
+
+.slick-disabled {
+  display: none !important; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 24px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .slick-dots li {
+    margin: 0 5px; }
+    .slick-dots li.slick-active button {
+      height: 4px !important; }
+  .slick-dots button {
+    vertical-align: bottom;
+    background: #000;
+    border: none;
+    width: 18px;
+    height: 1px;
+    outline: none;
+    font-size: 0;
+    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1); }
+    .slick-dots button:hover {
+      height: 4px !important; }

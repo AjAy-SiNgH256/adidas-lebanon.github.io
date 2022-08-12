@@ -1,0 +1,27 @@
+.gl-body--s,
+.gl-paragraph--s {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 14px;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+.adidas-logo {
+  margin-right: 20px;
+  min-width: 70px;
+  height: 42px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  transform-origin: 0 25px;
+  transition: width 0.45s, transform 0.45s cubic-bezier(0, 0.7, 0.6, 1); }
+
+@media screen and (max-width: 992px) {
+  .mobile-icon {
+    justify-content: center;
+    display: flex; } }

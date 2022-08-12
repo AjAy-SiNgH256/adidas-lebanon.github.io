@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url('AdihausDIN-Bold.eot');
+    src: url('AdihausDIN-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-Bold.woff2') format('woff2'),
+        url('AdihausDIN-Bold.woff') format('woff'),
+        url('AdihausDIN-Bold.ttf') format('truetype'),
+        url('AdihausDIN-Bold.svg#AdihausDIN-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url('AdihausDIN-BoldItalic.eot');
+    src: url('AdihausDIN-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-BoldItalic.woff2') format('woff2'),
+        url('AdihausDIN-BoldItalic.woff') format('woff'),
+        url('AdihausDIN-BoldItalic.ttf') format('truetype'),
+        url('AdihausDIN-BoldItalic.svg#AdihausDIN-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Xawzqulbcjbjnmhmzqtnkjycwmb';
+    src: url('Xawzqulbcjbjnmhmzqtnkjycwmb.eot');
+    src: url('Xawzqulbcjbjnmhmzqtnkjycwmb.eot?#iefix') format('embedded-opentype'),
+        url('Xawzqulbcjbjnmhmzqtnkjycwmb.woff2') format('woff2'),
+        url('Xawzqulbcjbjnmhmzqtnkjycwmb.woff') format('woff'),
+        url('Xawzqulbcjbjnmhmzqtnkjycwmb.ttf') format('truetype'),
+        url('Xawzqulbcjbjnmhmzqtnkjycwmb.svg#Xawzqulbcjbjnmhmzqtnkjycwmb') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN Cn';
+    src: url('AdihausDIN-CnBold.eot');
+    src: url('AdihausDIN-CnBold.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-CnBold.woff2') format('woff2'),
+        url('AdihausDIN-CnBold.woff') format('woff'),
+        url('AdihausDIN-CnBold.ttf') format('truetype'),
+        url('AdihausDIN-CnBold.svg#AdihausDIN-CnBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN Cn';
+    src: url('AdihausDIN-CnBoldItalic.eot');
+    src: url('AdihausDIN-CnBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-CnBoldItalic.woff2') format('woff2'),
+        url('AdihausDIN-CnBoldItalic.woff') format('woff'),
+        url('AdihausDIN-CnBoldItalic.ttf') format('truetype'),
+        url('AdihausDIN-CnBoldItalic.svg#AdihausDIN-CnBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN Cn';
+    src: url('AdihausDIN-Cn.eot');
+    src: url('AdihausDIN-Cn.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-Cn.woff2') format('woff2'),
+        url('AdihausDIN-Cn.woff') format('woff'),
+        url('AdihausDIN-Cn.ttf') format('truetype'),
+        url('AdihausDIN-Cn.svg#AdihausDIN-Cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Qkrakjpsolxwviuvtyxvpzwixyf';
+    src: url('Qkrakjpsolxwviuvtyxvpzwixyf.eot');
+    src: url('Qkrakjpsolxwviuvtyxvpzwixyf.eot?#iefix') format('embedded-opentype'),
+        url('Qkrakjpsolxwviuvtyxvpzwixyf.woff2') format('woff2'),
+        url('Qkrakjpsolxwviuvtyxvpzwixyf.woff') format('woff'),
+        url('Qkrakjpsolxwviuvtyxvpzwixyf.ttf') format('truetype'),
+        url('Qkrakjpsolxwviuvtyxvpzwixyf.svg#Qkrakjpsolxwviuvtyxvpzwixyf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN Cn';
+    src: url('AdihausDIN-CnItalic.eot');
+    src: url('AdihausDIN-CnItalic.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-CnItalic.woff2') format('woff2'),
+        url('AdihausDIN-CnItalic.woff') format('woff'),
+        url('AdihausDIN-CnItalic.ttf') format('truetype'),
+        url('AdihausDIN-CnItalic.svg#AdihausDIN-CnItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN Cn';
+    src: url('AdihausDIN-CnMediumItalic.eot');
+    src: url('AdihausDIN-CnMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-CnMediumItalic.woff2') format('woff2'),
+        url('AdihausDIN-CnMediumItalic.woff') format('woff'),
+        url('AdihausDIN-CnMediumItalic.ttf') format('truetype'),
+        url('AdihausDIN-CnMediumItalic.svg#AdihausDIN-CnMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN Cn';
+    src: url('AdihausDIN-CnMedium.eot');
+    src: url('AdihausDIN-CnMedium.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-CnMedium.woff2') format('woff2'),
+        url('AdihausDIN-CnMedium.woff') format('woff'),
+        url('AdihausDIN-CnMedium.ttf') format('truetype'),
+        url('AdihausDIN-CnMedium.svg#AdihausDIN-CnMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lceeiczeexohdxtzlzvdnpvulfr';
+    src: url('Lceeiczeexohdxtzlzvdnpvulfr.eot');
+    src: url('Lceeiczeexohdxtzlzvdnpvulfr.eot?#iefix') format('embedded-opentype'),
+        url('Lceeiczeexohdxtzlzvdnpvulfr.woff2') format('woff2'),
+        url('Lceeiczeexohdxtzlzvdnpvulfr.woff') format('woff'),
+        url('Lceeiczeexohdxtzlzvdnpvulfr.ttf') format('truetype'),
+        url('Lceeiczeexohdxtzlzvdnpvulfr.svg#Lceeiczeexohdxtzlzvdnpvulfr') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sgdwnuuvpuynpgdsmhikeizwjvo';
+    src: url('Sgdwnuuvpuynpgdsmhikeizwjvo.eot');
+    src: url('Sgdwnuuvpuynpgdsmhikeizwjvo.eot?#iefix') format('embedded-opentype'),
+        url('Sgdwnuuvpuynpgdsmhikeizwjvo.woff2') format('woff2'),
+        url('Sgdwnuuvpuynpgdsmhikeizwjvo.woff') format('woff'),
+        url('Sgdwnuuvpuynpgdsmhikeizwjvo.ttf') format('truetype'),
+        url('Sgdwnuuvpuynpgdsmhikeizwjvo.svg#Sgdwnuuvpuynpgdsmhikeizwjvo') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url('AdihausDIN-Italic.eot');
+    src: url('AdihausDIN-Italic.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-Italic.woff2') format('woff2'),
+        url('AdihausDIN-Italic.woff') format('woff'),
+        url('AdihausDIN-Italic.ttf') format('truetype'),
+        url('AdihausDIN-Italic.svg#AdihausDIN-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url('AdihausDIN-Medium.eot');
+    src: url('AdihausDIN-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-Medium.woff2') format('woff2'),
+        url('AdihausDIN-Medium.woff') format('woff'),
+        url('AdihausDIN-Medium.ttf') format('truetype'),
+        url('AdihausDIN-Medium.svg#AdihausDIN-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rxjriwbhofinidnvmbczldtvuzm';
+    src: url('Rxjriwbhofinidnvmbczldtvuzm.eot');
+    src: url('Rxjriwbhofinidnvmbczldtvuzm.eot?#iefix') format('embedded-opentype'),
+        url('Rxjriwbhofinidnvmbczldtvuzm.woff2') format('woff2'),
+        url('Rxjriwbhofinidnvmbczldtvuzm.woff') format('woff'),
+        url('Rxjriwbhofinidnvmbczldtvuzm.ttf') format('truetype'),
+        url('Rxjriwbhofinidnvmbczldtvuzm.svg#Rxjriwbhofinidnvmbczldtvuzm') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url('AdihausDIN-MediumItalic.eot');
+    src: url('AdihausDIN-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-MediumItalic.woff2') format('woff2'),
+        url('AdihausDIN-MediumItalic.woff') format('woff'),
+        url('AdihausDIN-MediumItalic.ttf') format('truetype'),
+        url('AdihausDIN-MediumItalic.svg#AdihausDIN-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdihausDIN';
+    src: url('AdihausDIN-Regular.eot');
+    src: url('AdihausDIN-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AdihausDIN-Regular.woff2') format('woff2'),
+        url('AdihausDIN-Regular.woff') format('woff'),
+        url('AdihausDIN-Regular.ttf') format('truetype'),
+        url('AdihausDIN-Regular.svg#AdihausDIN-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fmfvgfqosabohbcyptzjyxnquqt';
+    src: url('Fmfvgfqosabohbcyptzjyxnquqt.eot');
+    src: url('Fmfvgfqosabohbcyptzjyxnquqt.eot?#iefix') format('embedded-opentype'),
+        url('Fmfvgfqosabohbcyptzjyxnquqt.woff2') format('woff2'),
+        url('Fmfvgfqosabohbcyptzjyxnquqt.woff') format('woff'),
+        url('Fmfvgfqosabohbcyptzjyxnquqt.ttf') format('truetype'),
+        url('Fmfvgfqosabohbcyptzjyxnquqt.svg#Fmfvgfqosabohbcyptzjyxnquqt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

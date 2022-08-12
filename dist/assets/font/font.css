@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "AdihausDIN-Cn";
+  src: url("AdihausDIN-Cn.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-Italic";
+  src: url("AdihausDIN-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CnBold";
+  src: url("AdihausDIN-CnBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CnBoldItalic";
+  src: url("AdihausDIN-CnBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CnItalic";
+  src: url("AdihausDIN-CnItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CnMedium";
+  src: url("AdihausDIN-CnMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CnMediumItalic";
+  src: url("AdihausDIN-CnMediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-Cond";
+  src: url("AdihausDIN-Cond.eot") format("truetype");
+  src: url("AdihausDIN-Cond.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CondBold";
+  src: url("AdihausDIN-CondBold.eot") format("truetype");
+  src: url("AdihausDIN-CondBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AdihausDIN-CondMedium";
+  src: url("AdihausDIN-CondMedium.eot") format("truetype");
+  src: url("AdihausDIN-CondMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AdihausDIN-BoldItalic";
+  src: url("AdihausDIN-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AdihausDIN-Medium";
+  src: url("AdihausDIN-Medium.eot");
+  src: url("AdihausDIN-Medium.woff") format("woff"),
+    url("AdihausDIN-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AdihausDIN-Bold";
+  src: url("AdihausDIN-Bold.eot");
+  src: url("AdihausDIN-Bold.eot?#iefix") format("embedded-opentype"),
+    url("AdihausDIN-Bold.woff") format("woff"),
+    url("AdihausDIN-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AdihausDIN-Regular";
+  src: url("AdihausDIN-Regular.eot");
+  src: url("AdihausDIN-Regular.woff") format("woff"),
+    url("AdihausDIN-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "adineuePRO-BlackItalicWeb";
+  src: url("adineuePRO-BlackItalicWeb.eot");
+  src: url("adineuePRO-BlackItalicWeb.woff") format("woff"),
+    url("adineuePRO-BlackItalicWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adineuePRO-BlackWeb";
+  src: url("adineuePRO-BlackWeb.eot");
+  src: url("adineuePRO-BlackWeb.woff") format("woff"),
+    url("adineuePRO-BlackWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adineuePRO-BoldItalicWeb";
+  src: url("adineuePRO-BoldItalicWeb.eot");
+  src: url("adineuePRO-BoldItalicWeb.woff") format("woff"),
+    url("adineuePRO-BoldItalicWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adineuePRO-BoldWeb";
+  src: url("adineuePRO-BoldWeb.eot");
+  src: url("adineuePRO-BoldWeb.woff") format("woff"),
+    url("adineuePRO-BoldWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adineuePRO-LightItalicWeb";
+  src: url("adineuePRO-LightItalicWeb.eot");
+  src: url("adineuePRO-LightItalicWeb.woff") format("woff"),
+    url("adineuePRO-LightItalicWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adineuePRO-LightWeb";
+  src: url("adineuePRO-LightWeb.eot");
+  src: url("adineuePRO-LightWeb.woff") format("woff"),
+    url("adineuePRO-LightWeb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "adineuePRO-RegularItalicWeb";
+  src: url("adineuePRO-RegularItalicWeb.eot");
+  src: url("adineuePRO-RegularItalicWeb.woff") format("woff"),
+    url("adineuePRO-RegularItalicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "adineuePRO-RegularWeb";
+  src: url("adineuePRO-RegularWeb.eot");
+  src: url("adineuePRO-RegularWeb.woff") format("woff"),
+    url("adineuePRO-RegularWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "adineuePRO-CrazyLight";
+  src: url("adineuePRO-CrazyLight.eot");
+  src: url("adineuePRO-CrazyLight.woff") format("woff"),
+    url("adineuePRO-CrazyLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "adineuePRO-UltraBlack";
+  src: url("adineuePRO-UltraBlack.eot");
+  src: url("adineuePRO-UltraBlack.woff") format("woff"),
+    url("adineuePRO-UltraBlack.ttf") format("truetype");
+}

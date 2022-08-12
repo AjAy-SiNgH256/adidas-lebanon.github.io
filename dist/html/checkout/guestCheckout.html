@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Css  -->
+  <link rel="stylesheet" href="../../css/skin/skin.css" />
+  <link rel="stylesheet" href="../../css/checkout/guestCheckout.css" />
+  <link rel="stylesheet" href="../../assets/font/stylesheet.css" />
+  <link rel="stylesheet" href="../../assets/font/font.css" />
+
+  <title>Guest_Checkout</title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="../../js/checkout/guestCheckout.min.js"></script>
+  <script src="../../js/components/customSelect.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script src="../../js/components/popperTooltip.min.js"></script>
+  <script src="../../js/components/customInputField.min.js"></script>
+
+
+  <div class="container pt-3">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-lg-6 mobile-icon">
+            <a href="/"><img class="adidas-logo" src="../../assets/images/icon-adidas-logo.svg" alt="icon"></a>
+          </div>
+          <div class="col-6 gl-body--s d-none d-lg-block">
+            <img src="https://img.icons8.com/windows/19/000000/android.png" />
+            <span class="pr-3">QUESTIONS?
+              <a href="tel:+44 20 7365 7315">+44 20 7365 7315</a>
+            </span>
+            <span class="pr-2">Mon to Fri: 8am - 10pm</span>
+            <span>Sat - Sun: 9am - 9pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="border-bottom">
+    <div class="container pt-4">
+      <div class="row pl-3">
+        <a href="/cart" class="step-previous step-padding">
+          <span class="step-number float-left">1</span>
+          <span class="step-label">BAG</span>
+        </a>
+        <div class="step-selected step-padding pb-3">
+          <span class="step-number float-left">2</span>
+          <span class="step-label">DELIVERY</span>
+        </div>
+        <div class="step-next step-padding">
+          <span class="step-number float-left">3</span>
+          <span class="step-label-next">PAYMENT</span>
+        </div>
+        <div class="step-next step-padding">
+          <span class="step-number float-left">4</span>
+          <span class="step-label-next">ORDER COMPLETE</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="row">
+            <div class="col-12">
+              <p class="common-heading">DELIVERY ADDRESS</p>
+            </div>
+            <div class="col-12 col-lg-6 pb-4 pb-lg-0">
+              <input autofocus type="text" name="first name" class="form-control custom-input shippingFirstName" placeholder=" " id="firstName" value="" maxlength="15" onblur="validateInputField('firstName')" oninput="validateInputField('firstName')">
+              <label class="floating-label"><span class="float-backround">First Name *</span></label>
+              <img id="firstName-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+              <img id="firstName-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+              />
+              <div id="firstNameError" class="invalid-feedback"></div>
+            </div>
+            <div class="col-12 col-lg-6 pb-2 pt-2 pt-lg-0">
+              <input autofocus type="text" name="last name" class="form-control custom-input shippingLastName" placeholder=" " id="lastName" value="" maxlength="20" onblur="validateInputField('lastName')" oninput="validateInputField('lastName')">
+              <label class="floating-label pt-2 pt-lg-0"><span class="float-backround">Last Name *</span></label>
+              <img id="lastName-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+              <img id="lastName-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+              />
+              <div id="lastNameError" class="invalid-feedback"></div>
+            </div>
+            <div class="col-12 pt-4">
+              <input autofocus type="text" name="delivery address" class="form-control custom-input deliveryAddress" placeholder=" " id="deliveryAddress" value="" onsubmit="validateInputField('deliveryAddress')">
+              <img class="search-icon" src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" />
+              <label class="floating-label pt-4"><span class="float-backround">Find Delivery Address *</span></label>
+              <span id="deliveryAddress-hint" class="form-hint">Search your Post Code or Street Address</span>
+              <div id="deliveryAddressError" class="invalid-feedback"></div>
+            </div>
+            <div class="col-12 delivery-option">
+              <div class="row custom-padding pt-4">
+                <p class="common-heading pr-2 float-left">GET YOUR ORDER</p>
+                <span class="custom-tooltip tooltip-with-icon pt-2"><button id="tooltip-button"
+                    aria-describedby="tooltip" type="button" class="tooltip-button" data-di-
+                    id="di-id-21912650-4cda74be">
+                    <img src="https://img.icons8.com/material-sharp/24/000000/question-mark.png" />
+                  </button>
+
+                </span>
+                <div id="tooltip" class="tooltip-panel tooltip-panel-large" role="tooltip">
+                  <span class="custom-tooltip-inner">
+                    <div class="fetched-content">
+                      <p>
+                      <div class="contentasset" data-contentasset-id="basket-shippinginfo-content"
+                        data-contentasset="basket-shippinginfo-content">
+                        <div id="basket-shipping-info">
+                          <p>Our standard delivery times are listed below. For an accurate estimate please enter your
+                            delivery address:</p>
+                          <p>- Express Shipping = 1 business day*</p>
+                          <p>- Standard = 1-3 business days</p>
+                          <p>- Standard with Personalised items = 2-4 business days</p>
+                          <p>Any expected delays will be included in the delivery estimate.</p>
+                          <p>*1 business day if you order before 16:30. UPS Express is not available for all of UK</p>
+                        </div>
+                      </div>
+                      </p>
+                    </div>
+                  </span>
+                  <div id="arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div class="row custom-padding">
+                <div class="col-12">
+                  <div data-auto-id="delivery-option" class="row pt-3 delivery-options delivery-option-selectable delivery-option-selected" role="presentation">
+                    <img class="delivery-option-checked" src="../../assets/images/checkmark-white.png" />
+                    <div class="col-12 p-0">
+                      <p class="mb-0 mt-1 float-left">
+                        <strong>STANDARD DELIVERY</strong>
+                      </p>
+                      <div class="float-right" data-auto-id="delivery-option-price">£3.99
+                      </div>
+                    </div>
+                    <div class="col-12 p-0">
+                      <div class="float-left pr-3">
+                        <img src="../../assets/images/delivery-normal.svg" width="19" height="25">
+                      </div>
+                      <div class="pl-4 w-75">
+                        <p class="mb-0">Royal Mail (Standard Delivery)</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row custom-padding pt-3">
+                <div class="col-12">
+                  <div data-auto-id="delivery-option" class="row pt-3 delivery-options delivery-option-selectable" role="presentation">
+                    <div class="col-12 p-0">
+                      <p class="mb-0 mt-1 float-left">
+                        <strong>FROM AN ADIDAS STORE</strong>
+                      </p>
+                      <div class="float-right" data-auto-id="delivery-option-price">FREE
+                      </div>
+                    </div>
+                    <div class="col-12 p-0">
+                      <div class="float-left pr-3">
+                        <img src="../../assets/images/store.svg" width="19" height="25">
+                      </div>
+                      <div class="pl-4 w-75">
+                        <p class="mb-0">Reserve online, then collect and pay at an adidas store</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row custom-padding pt-3">
+                <div class="col-12">
+                  <div data-auto-id="delivery-option" class="row pt-3 delivery-options delivery-option-selectable " role="presentation">
+                    <div class="col-12 p-0">
+                      <p class="mb-0 mt-1 float-left">
+                        <strong>FROM A COLLECTION POINT</strong>
+                      </p>
+                      <div class="float-right" data-auto-id="delivery-option-price">£3.99
+                      </div>
+                    </div>
+                    <div class="col-12 p-0">
+                      <div class="float-left pr-3">
+                        <img src="https://img.icons8.com/external-those-icons-fill-those-icons/19/000000/external-pin-maps-and-locations-those-icons-fill-those-icons.png" />
+                      </div>
+                      <div class="pl-4 w-75">
+                        <p class="mb-0">Collect your order from a convenient location</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="common-heading pt-4">CONTACT DETAILS</p>
+            </div>
+            <div class="col-12">
+              <p>We'll use these details to keep you informed on your delivery.</p>
+            </div>
+            <span class="col pl-0">
+              <div class="col-12 col-lg-6 pb-4">
+                <input autofocus type="text" name="email address" class="form-control custom-input email" placeholder=" "
+                  id="email" value="" maxlength="50" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                  onblur="validateInputField('email')" oninput="validateInputField('email')">
+                <label class="floating-label"><span class="float-backround">Email *</span></label>
+            <img id="email-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+            <img id="email-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+            />
+            <div id="email-pattern-error" class="pattern-field-error col-11"></div>
+            <div id="emailError" class="invalid-feedback"></div>
+          </div>
+          <div class="col-12 col-lg-6 pt-3">
+            <input autofocus type="text" name="telephone number" class="form-control custom-input phone" placeholder=" " id="phone" value="" pattern="[0-9]{7,}" maxlength="25" oninput="validateInputField('phone')">
+            <label class="floating-label pt-3"><span class="float-backround">Phone Number (Optional) *</span></label>
+            <img id="phone-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+            <img id="phone-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+            />
+            <div id="phone-pattern-error" class="pattern-field-error col-11"></div>
+            <div class="invalid-feedback"></div>
+          </div>
+          </span>
+          <div class="col-12">
+            <p id="phone-hint" class="form-hint">E.g. (020) 7947 6330</p>
+          </div>
+          <div class="col-12 pt-4">
+            <div class="form-item">
+              <div class="checkbox checkbox-checked">
+                <label role="presentation" class="checkbox-label" data-auto-id="billing-address-checkbox-label">
+                    <input type="checkbox" name="shouldUseShippingAddressForBilling" class="checkbox-input"
+                      data-auto-id="billing-address-checkbox" value="" checked="" data-di-id="di-id-9e5c0dcf-bb1bfe9f">
+                    <img class="checkbox-icon" src="../../assets/images/checkmark-white.png" />
+                    <span class="checkbox-text">My billing and delivery information are the
+                      same.</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 billing-toggle">
+            <div class="row">
+              <div class="col-12">
+                <p class="common-heading pt-4">BILLING DETAILS</p>
+              </div>
+              <div class="col-12 pb-4">
+                <div class="custom-select border-0">
+                  <select>
+                      <option value="Unite Kingdom" data-id="Unite Kingdom">
+                        Unite Kingdom
+                      </option>
+                      <option value="Unite Kingdom" data-id="Unite Kingdom">
+                        Unite Kingdom
+                      </option>
+                      <option value="India" data-id="India">
+                        India
+                      </option>
+                      <option value="Canada" data-id="Canada">
+                        Canada
+                      </option>
+                      <option value="China" data-id="China">
+                        China
+                      </option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 pt-4 pb-3">
+                <input autofocus type="text" name="first name" class="form-control custom-input billingFirstName" placeholder=" " id="billingFirstName" value="" maxlength="15" onblur="validateInputField('billingFirstName')" oninput="validateInputField('billingFirstName')">
+                <label class="floating-label pt-4"><span class="float-backround">First Name *</span></label>
+                <img id="billingFirstName-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+                <img id="billingFirstName-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                />
+                <div id="billingFirstNameError" class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 col-lg-6 pt-4 pb-3">
+                <input autofocus type="text" name="last name" class="form-control custom-input billingLastName" placeholder=" " id="billingLastName" value="" maxlength="20" onblur="validateInputField('billingLastName')" oninput="validateInputField('billingLastName')">
+                <label class="floating-label pt-4"><span class="float-backround">Last Name *</span></label>
+                <img id="billingLastName-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+                <img id="billingLastName-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                />
+                <div id="billingLastNameError" class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 pt-4">
+                <input autofocus type="text" name="billing address" class="form-control custom-input billingAddress" placeholder=" " id="billingAddress" value="" maxlength="70" onblur="validateInputField('billingAddress')" oninput="validateInputField('billingAddress')">
+                <label class="floating-label pt-4"><span class="float-backround">Address *</span></label>
+                <span id="billingAddress-hint" class="form-hint">E.g. 3 Stripes Street</span>
+                <img id="billingAddress-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+                <img id="billingAddress-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                />
+                <div id="billingAddressError" class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 pt-4">
+                <input autofocus type="text" class="form-control custom-input billingAddInfo" placeholder=" " id="billingAddinfo" value="">
+                <label class="floating-label pt-4"><span class="float-backround">Additional Info *</span></label>
+                <span class="form-hint">E.g. Company, Apartment, Building, etc.</span>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 col-lg-6 pt-4 pb-3">
+                <input autofocus type="text" name="town/city" class="form-control custom-input billingCity" placeholder=" " id="billingCity" value="" maxlength="25" pattern="[a-zA-Z]{3,}" onblur="validateInputField('billingCity')" oninput="validateInputField('billingCity')">
+                <label class="floating-label pt-4"><span class="float-backround">Town/City *</span></label>
+                <img id="billingCity-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+                <img id="billingCity-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                />
+                <div id="billingCity-pattern-error" class="pattern-field-error col-11"></div>
+                <div id="billingCityError" class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 col-lg-6 pt-4">
+                <input autofocus type="text" name="post code" class="form-control custom-input billingPostCode" placeholder=" " id="billingPostCode" value="" maxlength="10" pattern="^([a-zA-Z][0-9]{3}[a-zA-Z]{2}){1,7}$" onblur="validateInputField('billingPostCode')"
+                  oninput="validateInputField('billingPostCode')">
+                <label class="floating-label pt-4"><span class="float-backround">Post Code *</span></label>
+                <span id="billingPostCode-hint" class="form-hint">E.g. W11 2BQ</span>
+                <img id="billingPostCode-invalid-input" class="invalid-input" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABQUlEQVRIie2VT0rDUBDGv3l58QYN9gYu4gVCg1gVkdJFFh6iPVAvIehOUYwoBS9gFr1Bgj1C/owLE0hr8t4EXHYgm5c332/em28S4BBDI52FiywKvKF5WRR46Sxc7K+rHfH5ZAniFecqHgLJosDjXMUgXqXzybIXgILuQPgC4HOuPrbX4dgmnt6EIy7UKwAfwMYp9X37PXUlQHMMximAjc5pOnpep33i7b1Opc+9x/fMCJBCJOK9ABtEKm4E9EEKhUIqbgUALYf8NjGpl30ACbnVxfHD57cp3wroOAkklTehbBt6KytLUXFWQBYFHhx+q6tP6uekcPlFMoxGwJ8hqvQVSpoOGUaxTdt3PmQYRYPW1VApxPqpMLlFAiFTgsSKNshukzXfNm4htzqT+Hz8tN6Sri7RuOuII2PCf/9wDmGNHwnG85FN4AMrAAAAAElFTkSuQmCC">
+                <img id="billingPostCode-success-input" class="success-input" alt="Image not available" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzJlY2M3MSI+PHBhdGggZD0iTTE1NC42ODgwMiwzNC4zNDQwMWMtMS40ODk1MSwwLjA0NDM4IC0yLjkwMzI0LDAuNjY2OSAtMy45NDE2NywxLjczNTY4bC04Ny42Nzk2OSw4Ny42Nzk2OWwtMzYuMDc5NjksLTM2LjA3OTY5Yy0xLjQzODAyLC0xLjQ5Nzc2IC0zLjU3MzM5LC0yLjEwMTEgLTUuNTgyNTgsLTEuNTc3MzJjLTIuMDA5MTksMC41MjM3OCAtMy41NzgyNCwyLjA5MjgzIC00LjEwMjAyLDQuMTAyMDJjLTAuNTIzNzgsMi4wMDkxOSAwLjA3OTU1LDQuMTQ0NTYgMS41NzczMSw1LjU4MjU4bDQwLjEzMzMzLDQwLjEzMzMzYzIuMjM5MDQsMi4yMzgxMSA1Ljg2ODI1LDIuMjM4MTEgOC4xMDcyOSwwbDkxLjczMzMzLC05MS43MzMzM2MxLjY5NTY5LC0xLjY0ODI4IDIuMjA1NTUsLTQuMTY4NTEgMS4yODM4OSwtNi4zNDYzYy0wLjkyMTY2LC0yLjE3Nzc5IC0zLjA4NTc2LC0zLjU2NjM4IC01LjQ0OTUxLC0zLjQ5NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                />
+                <div id="billingPostCode-pattern-error" class="pattern-field-error col-11"></div>
+                <div id="billingPostCodeError" class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 pt-4">
+                <div class="form-item">
+                  <div class="checkbox checkbox-checked">
+                    <label role="presentation" class="checkbox-label" data-auto-id="billing-address-checkbox-label">
+                        <input type="checkbox" name="ageCheck" class="checkbox-input"
+                          data-auto-id="billing-address-checkbox" value="" checked=""
+                          data-di-id="di-id-9e5c0dcf-bb1bfe9f">
+                        <img class="checkbox-icon" src="../../assets/images/checkmark-white.png" />
+                        <span class="checkbox-text">I'm 16+ years old.
+                          <button class="button-link" data-toggle="collapse" data-target="#ageCheck"
+                            aria-expanded="false" aria-controls="ageCheck">Why does this matter?</button>
+                        </span>
+                      </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 collapse" id="ageCheck">
+                <div class="row">
+                  <div class="col-12 pl-4">
+                    <p class="pt-2 pl-4 m-1">By law, you must be at least 16 years old to receive updates from adidas.
+                    </p>
+                  </div>
+                  <div class="col-12 pl-4 ml-4">
+                    <button class="button-link " data-toggle="collapse" data-target="#ageCheck" aria-expanded="false" aria-controls="ageCheck"><u>Close</u></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 gc-vspace-medium">
+            <button type="button" class="gc-cta-primary" onclick="guestCheckoutSubmit()">
+                <span>Review & Pay</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAXklEQVRIie3UOw5AABRE0Yk9EPa/EwqJT0NhOVdBIdHKEJmzgZs3xZMiIr4GaIEJqNzhgcNqjQMlsJzxDWgSF9DhM0tSYTv9MoKncp+6TvTp8HhG7Q+k542XGRH/twNqEg1iNPsU8QAAAABJRU5ErkJggg==" alt="Image not available" />
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 d-none d-lg-block">
+        <div class="pt-2">
+          <button type="button" class="cta cta-secondary cta-full-width" aria-label="PayPal"><span
+                class="cta-content"><img alt="PayPal" src="../../assets/images/paypal.svg"></span><img
+                src="https://img.icons8.com/ios-glyphs/30/000000/long-arrow-right.png" /></button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>

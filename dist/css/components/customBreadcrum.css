@@ -1,0 +1,30 @@
+.breadcrum-back {
+  width: 14px;
+  margin-right: 10px; }
+
+.breadcrum-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000; }
+
+.beardcrum-item {
+  display: inline-flex;
+  align-items: center; }
+  .beardcrum-item button {
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-end; }
+  .beardcrum-item p {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px; }
+
+.breadcrum-separator {
+  padding: 0 4px;
+  color: #000;
+  line-height: 8px; }
