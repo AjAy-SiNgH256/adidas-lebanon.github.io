@@ -3534,11 +3534,11 @@ main .content-wrapper .sidebar-wrapper .sidebar .buy-section .sizes .size:hover 
   main .content-wrapper .content .gallery-container .gallery-block-items-content img {
     width: 100%;
     background-color: #edeff0;
-    height: 70vh;
+    height: 66vh;
     object-fit: contain;
 }
 main .content-wrapper .content .gallery-container .gallery-image-container {
-  height: 70vh;
+  height: 66vh;
   margin: 0 auto;
   cursor: zoom-in;
 }
@@ -3563,11 +3563,11 @@ main .content-wrapper .content .gallery-container .gallery-image-container {
   }
 
   main .content-wrapper .content .gallery-container .gallery-block-items-content img {
-    height: 68vh;
+    height: 66vh;
   }
 
   main .content-wrapper .content .gallery-container .gallery-image-container {
-    height: 68vh;
+    height: 66vh;
   }
 }
 
